@@ -16,7 +16,7 @@ The `main.tf` file defines two primary resources using the **Docker Provider**:
 ---
 ## 🏃 Getting Started (Execution Guide)
 Follow these steps in your terminal from the directory containing `main.tf` to provision the infrastructure.
-### Step 1: Initialize the Working Directory
+Step 1: Initialize the Working Directory
 This command downloads the **Docker Provider** and sets up the necessary local files.
 ```bash
 terraform init
@@ -32,6 +32,4 @@ terraform state list
 🧹 Cleanup (Destroying Resources)
 terraform destroy
 
-<img width="1919" height="1079" alt="Screenshot 2025-10-29 200634" src="https://github.com/user-attachments/assets/78627eca-4943-48a8-aa8b-9cef8d13ace6" />
-<img width="1410" height="1079" alt="Screenshot 2025-10-29 200717" src="https://github.com/user-attachments/assets/02df2bb8-3383-447a-bcd9-5989aaf2c72b" /><img width="1919" height="1079" alt="Screenshot 2025-10-29 200739" src="https://github.com/user-attachments/assets/6bece65a-6e26-4c5e-9d17-dfd3280eb6d1" />
 
