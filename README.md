@@ -20,10 +20,18 @@ Follow these steps in your terminal from the directory containing `main.tf` to p
 This command downloads the **Docker Provider** and sets up the necessary local files.
 ```bash
 terraform init
+Step 2: Review the Execution Plan
+This is a crucial step for IaC safety. The plan command shows exactly what actions Terraform will take (i.e., 2 to add
+Step 3: Apply the Configuration
+This command executes the plan, provisions the resources, and creates the container
 terraform plan
+After a successful apply, you can verify the container ran and exited successfully using the Docker CLI:
 docker ps -a | grep terraform-hello-container
+Step 4: Check Terraform State
 terraform state list
+🧹 Cleanup (Destroying Resources)
 terraform destroy
-<img width="1919" height="1079" alt="Screenshot 2025-10-29 200739" src="https://github.com/user-attachments/assets/6275ca1f-1d18-42b1-bb4e-ec391ad4aaa0" />
-<img width="1410" height="1079" alt="Screenshot 2025-10-29 200717" src="https://github.com/user-attachments/assets/8692fa28-b086-4f85-b714-c40159b7f944" />
-<img width="1919" height="1079" alt="Screenshot 2025-10-29 200634" src="https://github.com/user-attachments/assets/5e3ee089-f587-4341-a113-5581922757d3" />
+
+<img width="1919" height="1079" alt="Screenshot 2025-10-29 200634" src="https://github.com/user-attachments/assets/78627eca-4943-48a8-aa8b-9cef8d13ace6" />
+<img width="1410" height="1079" alt="Screenshot 2025-10-29 200717" src="https://github.com/user-attachments/assets/02df2bb8-3383-447a-bcd9-5989aaf2c72b" /><img width="1919" height="1079" alt="Screenshot 2025-10-29 200739" src="https://github.com/user-attachments/assets/6bece65a-6e26-4c5e-9d17-dfd3280eb6d1" />
+
